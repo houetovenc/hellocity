@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>hello from London</h1>
+    <p>Il est actuellement {{ 'now' |date('h:i A', ) }}.</p>
+
+    <footer>
+        <p>
+
+        &copy; Copyright {{ 'now'|date('Y', ) }} 
+        &middot; <a href="#">About Us</a>
+
+        </p>
+    </footer>
+
+
+{% endblock %}
