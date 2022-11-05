@@ -1,17 +1,11 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <h1>hello from London</h1>
-    <p>Il est actuellement {{ 'now' |date('h:i A', ) }}.</p>
+    <img src="{{ asset('/img/drapeau-londres.png') }}" alt="london flag" class="h-32 mt-12 rounded shadow-md">
+    <h1 class="mt-5 text-5xl font-semibold text-indigo-600">Hello from London !</h1>
+    <p>Il est actuellement {{ 'now' |date('h:i A', 'Europe/London') }}.</p>
 
-    <footer>
-        <p>
-
-        &copy; Copyright {{ 'now'|date('Y', ) }} 
-        &middot; <a href="#">About Us</a>
-
-        </p>
-    </footer>
+   
 
 
 {% endblock %}
